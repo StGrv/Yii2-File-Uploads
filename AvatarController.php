@@ -32,3 +32,4 @@ class AvatarController extends \yii\web\Controller
     }
     
 } // End of the controller class
+ 
