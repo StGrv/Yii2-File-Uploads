@@ -30,4 +30,4 @@ class Avatar extends \yii\db\ActiveRecord
     }
 
 } // End
-
+ 
