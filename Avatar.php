@@ -18,6 +18,7 @@ class Avatar extends \yii\db\ActiveRecord
             [['image'], 'required'],
             [['image'], 'file', 'extensions'=>'jpg,jpeg,png'],
             // We can add this line as well for an additional security: 'mimeTypes' => 'image/jpg, image/jpeg, image/png'    
+            [['image'], 'file', 'extensions'=>'jpg,jpeg,png', 'maxFiles' => 5],
         ];
     }
 
@@ -30,4 +31,4 @@ class Avatar extends \yii\db\ActiveRecord
     }
 
 } // End
- 
+
