@@ -14,7 +14,7 @@ class AvatarController extends \yii\web\Controller
         if ($avatar->load(Yii::$app->request->post())) {
             
             $image = UploadedFile::getInstance($avatar, 'image') ;
-            $image->saveAs('@app/views/avatar/uploads/'.$image->baseName . '.' . $image->extension) ;
+            $image->saveAs('uploads/'.$image->baseName . '.' . $image->extension) ; // We crate the "uploads" folder under @frontend/web
             $avatar->image = $image->baseName . '.' . $image->extension ;
             
             if ($avatar->save()) {
