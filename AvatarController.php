@@ -1,17 +1,12 @@
 <?php
-
 namespace frontend\controllers;
+
 use frontend\models\Avatar ;
 use Yii ;
 use yii\web\UploadedFile ;
 
 class AvatarController extends \yii\web\Controller
 {
-    public function actionIndex()
-    {
-        return $this->render('index') ;
-    }
-    
     public function actionCreate()
     {
         $avatar = new Avatar() ;
@@ -32,4 +27,3 @@ class AvatarController extends \yii\web\Controller
     }
     
 } // End of the controller class
-  
