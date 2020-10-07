@@ -7,7 +7,6 @@ use yii\web\UploadedFile ;
 
 class AvatarController extends \yii\web\Controller
 {
-   
     public function actionIndex()
     {
         return $this->render('index') ;
@@ -27,7 +26,6 @@ class AvatarController extends \yii\web\Controller
                 return $this->redirect('site/index') ;
             }
         }
-        
             return $this->render('create', [
                 'avatar' => $avatar,
             ]);
